@@ -1,6 +1,6 @@
 # Assignment — D3 Event Handling
 
-Link to your GitHub pages website: `[insert your hyperlink here]`
+Link to your GitHub pages website: https://github.com/NEU-DS-4200-S20/in-class-programming-d3-event-handling-thekma
 
 # Aim of the assignment
 
@@ -13,7 +13,7 @@ You will not have to create any new chart, you will just demonstrate your unders
 
 1. Clone this repository to your local machine.
   
-    E.g., in your terminal / command prompt `CD` to where you want this the folder for this activity to be. Then run `git clone <YOUR_REPO_URL>`
+    E.g., in your terminal / command prompt `CD` to where you want this the folder for this activity to be. Then run `git clone https://github.com/NEU-DS-4200-S20/in-class-programming-d3-event-handling-thekma`
 
     **Under no circumstances should you be editing files via the GitHub website user interface.** Do all your edits locally after cloning the repository.
 

@@ -47,7 +47,26 @@ circle = svg.append('circle') // The circle we want to change color when the squ
 //    - create a dispatch for when the color should change
 //    - call that dispatch when the square is colored (by adding to the click listener in the square)
 //    - receive that dispatch and change the color of the circle
-// YOUR CODE HERE
+
+dispatch.on("start", callback1);
+dispatch.on("start.foo", callback2);
+dispatch.on("end", callback3);
+
+dispatch.call("start");
+
+//dispatch.call("start", {about: "I am a context object"}, "I am an argument");
+
+var dispatch = d3.dispatch("changeColor");
+
+rect.on('click', function() {
+  console.log("rect clicked");
+  dispatch.call("changeColor")
+})
+
+dispatch.on("changeColor", function() {
+  circle.attr('fill', 'red')
+})
+
 rect.on('click', function() {
   console.log("rect clicked");
 })

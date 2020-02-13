@@ -26,7 +26,7 @@
 <body>
 
 <!-- Update this with your GitHub repo URL -->
-<span id="forkongithub"><a href="https://github.com/NEU-CS-7250-S20-Staff/Assignment--D3_event_handling">Fork me on GitHub</a></span>
+<span id="forkongithub"><a href="https://github.com/NEU-DS-4200-S20/in-class-programming-d3-event-handling-thekma">Fork me on GitHub</a></span>
 
 <!-- Writeup -->
 <div class="content-column">
@@ -60,6 +60,18 @@
 <!-- Scripts at the end avoid need for dealing with async, defer, or onload event handlers -->
 <script src="lib/d3.v4/d3.v4.js"></script>
 <script src="js/main.js"></script>
+
+<script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
+<script>
+var dispatch = d3.dispatch("start", "end");
+</script>
+
+const button = document.querySelector('button');
+
+button.addEventListener('click', event => {
+  button.innerHTML = `Click count: ${event.detail}`;
+});
+
 </body>
 
 </html>
